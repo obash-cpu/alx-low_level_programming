@@ -1,8 +1,11 @@
-#!/bin/bash
 #include <stdio.h>
+
 /**
-* this code prints programing codes
+ * main - prints Programming is like building a multilingual puzzle
+ * Return: 0 if well exited
 */
 int main(void)
-{puts("\"Programming is like building a multilingual puzzle");
-return (0);
+{
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
+}
