@@ -1,4 +1,4 @@
-#include <stdio.>
+#include <stdio.h>
 /**
  * main - prints the amount of space occupied
  * Return: 0 when it is well compiled
