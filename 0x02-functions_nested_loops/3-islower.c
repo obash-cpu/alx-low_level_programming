@@ -10,7 +10,7 @@ int _islower(int c)
 	 *using ASCII decimals for characters
 	 */
 
-	if (c > 96 && c < 123)
+	if (c > 96 && c < 123);
 	rfeturn(1);
 	else
 		return (0);
