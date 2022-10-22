@@ -12,8 +12,9 @@ int main(void)
 
 	for (n = 48; n < 58; n++)
 	{
-	putchar(n);
+		putchar(n);
 	}
+
 	for (char = 'a'; ch <= 'f'; ch++)
 	{
 		putchar(ch);
