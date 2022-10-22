@@ -1,12 +1,13 @@
 #include <stdio.h>
+
 /**
- * main - main block
- * Description: Print all numbers of base 10, starting from 0.
- * Return: All good
+ * main - print 0123456789 using putchar
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	int n = '0'
+	int n = '0';
 
 	while (n <= '9')
 	{
@@ -14,6 +15,7 @@ int main(void)
 		n++;
 	}
 	putchar('\n');
+
 	return (0);
 
 }
