@@ -12,12 +12,13 @@ int main(void)
 	printif("Infinite loop incoming :(\n");
 
 	i = 0;
+
 	/*while (i < 10)*/
 	/*{*/
 	/*putchar(i);*/
 	/*}*/
 
 	printif("Infinite loop avoided! \\o/\n");
-	
+
 	return (0);
 }
