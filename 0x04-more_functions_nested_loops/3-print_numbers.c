@@ -5,6 +5,12 @@
  */
 void print_numbers(void)
 {
-	if (i >= '0', i <= '9'; i++)
-	return (i);
+	for (i = '0'; i <= '9'; i++)
+	{
+	putchar(i);
+	}
+	{
+		putchar('\n');
+	}
+
 }
