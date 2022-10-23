@@ -4,6 +4,7 @@
  * print_numbers - prints numbers from 0 to 9
  * Return: void
  */
+
 void print_numbers(void)
 {
 	int c;
@@ -12,6 +13,7 @@ void print_numbers(void)
 	{
 		_putchar(c);
 	}
+
 	_putchar('\n');
 
 }
