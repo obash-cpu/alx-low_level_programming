@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- * prin_line - a funcltion that draws a straight line
- * followed by a nwe line.
- * @n: An input integer
- * Return: Always 0
+ * print_line - draw a straight line
+ * @n: number of times underscore is printed
+ * Description: Can use _putchar to print
  */
-
 void print_line(int n)
 {
 	int c;
@@ -14,14 +12,9 @@ void print_line(int n)
 	c = 0;
 
 	while (c < n)
-
 	{
-
-	_putchar('-');
-
-	c++;
-
+		_putchar('_');
+		c++;
 	}
-
 	_putchar('\n');
 }
