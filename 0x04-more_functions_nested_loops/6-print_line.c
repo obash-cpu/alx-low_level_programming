@@ -9,14 +9,17 @@
 
 void print_line(int n)
 {
-	int i = 0;
+	int c;
 
-	if (n > 0)
+	c = 0;
+
+	while (c < n)
 
 	{
 
-	for (; i < n; i++)
 	_putchar('-');
+	
+	c++;
 
 	}
 
