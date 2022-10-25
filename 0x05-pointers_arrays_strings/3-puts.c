@@ -2,15 +2,17 @@
 
 /**
  * _puts - prints string
- * @str: string
- * Return: void
+ * @str: char array string type
+ * Description: Can only use _putchar
  */
 void _puts(char *str)
 {
 
-	while (*str != '\0')
+	int i;
+
+	for (i = o; str[i] != '\0'; i++)
 	{
-		_putchar(*str++);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
