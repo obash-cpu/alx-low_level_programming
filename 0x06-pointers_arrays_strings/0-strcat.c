@@ -9,11 +9,12 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char destination[30] = "my c string ";
-	char source[30] = "practice made clear";
+	char src[] = "hello";
+	char dest[DEST_SIZE] "world";
 
-	strcat(destination, source);
-	printf("Concatenated String: %s\n", destination);
-	return (dest);
+	strcat(dest, src, 5);
+	printf(dest);
+
+	return (0);
 }
 
