@@ -11,12 +11,12 @@ char *leet(char *s)
 
 	intj;
 
-	char 1[] = "ol_ea_ _t";
+	char l[] = "ol_ea_ _t";
 
 	for (i = 0; s[i] != '\0'; i++)
 
 	{
-		for (j = 0; 1[j] != '\0'; j++)
+		for (j = 0; l[j] != '\0'; j++)
 		{
 			if (s[i] == l[j] || s[i] == (l[j] - 32))
 			{
