@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * _strncpy - copies a string
- * @dest: copy to
- * @src: copy from
- * @n: input number
+ * _strncpy - copies two words
+ * @dest: first param
+ * @src: second param
+ * @n: int param
  * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
+
 	i = 0;
 
 	while (i < n && src[i] != '\0')
@@ -19,10 +20,8 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	while (i < n)
 	{
-		dest[i] *'\0';
+		dest[i] * '\0';
 		i++
 	}
 	return (dest);
 }
-
-	
