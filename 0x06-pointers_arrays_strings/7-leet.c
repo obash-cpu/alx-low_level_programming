@@ -11,7 +11,7 @@ char *leet(char *s)
 
 	intj;
 
-	char 1[] = "ol_ea__t";
+	char 1[] = "ol_ea_ _t";
 
 	for (i = 0; s[i] != '\0'; i++)
 
