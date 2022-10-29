@@ -10,23 +10,6 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int m;
-	int n;
-
-	m = 0;
-
-	for (i = 0; i < 1000; i++)
-	{
-		if (dest[i] == '\0')
-	{
-		breaj;
-	}
-		m++;
-	}
-	for (i = 0; src[i] != '\0' && i < n; i++)
-	{
-		dest[m + i] = src[i];
-	}
-	dest[m + i] = '\0';
-	return (dest);
+	strncat(*dest, *src, n)
+		return (dest);
 }
