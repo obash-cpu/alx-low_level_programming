@@ -2,20 +2,22 @@
 #include <string.h>
 
 /**
- * _memset - assigns n bytes to a memory
- * @s: source string
- * @b: the constant byte
+ *_memcpy - coppies n bytes to a memory
+ * @dest: the string to copy to
+ * @src: the string to coppied
  * @n: length of buffer
- * Return: new string
+ * Return: pointer to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i = 0;
+	int i;
 
-	while (i < n)
+	src[10];
+	dest[15];
+
+	for (i = 0; i < n)
 	{
-		*(s + i) = b;
-		i++;
+		dest[i] = src[i];
 	}
 	return (s);
 }
