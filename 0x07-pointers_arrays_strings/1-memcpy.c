@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  *_memcpy - coppies n bytes to a memory
@@ -12,8 +11,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	int i;
 
-	src[10];
-	dest[15];
 
 	for (i = 0; i < n)
 	{
