@@ -1,11 +1,12 @@
 #include "lists.h"
 
 /**
- * insert_nodient_at_index - inserts a new node
- * @head: a pointer
- * @idx: the index of the list
- * @n: the integer of the new node
- * Return: NULL if the function fails
+ * listint_t *insert_nodeint_at_index - inserts anew node to listint_t
+ * @head: A pointer to the address of the head
+ * @idx: the index of the listint_t list
+ * @n: the integer for the new node
+ * Return: if the function fails - NULL
+ * otherwise - address to the new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
