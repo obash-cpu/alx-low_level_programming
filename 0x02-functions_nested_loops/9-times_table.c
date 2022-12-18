@@ -10,31 +10,30 @@
 void times_table(void)
 
 {
-	int rone, cone, d;
+	int col = 0;
+	int row = 0;
+	int units = 0;
+	int tens = 0;
+	int n = 0;
 
-	for (rone = 0; rone <= 9; rone++)
+	while (row < 10)
 	{
-		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
-		for (cone = 1; cone <= 9; cone++)
+		while (col < 10)
 		{
-			d = (rone * cone);
-			if ((d / 10) > 0)
-			{
-				_putchar((d / 10) + '0');
-			}
-			else
-			{
-				_putchar(' ');
-			}
-			_putchar((d % 10) + '0');
-
-			if (cone < 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+		n = col * row;
+		units = n % 10;
+		tens = (n - units) / 10;
+		if (col > 0)
+		{
+			_putchar(' ');
+			(tens <= 0) ? _putchar(' ') : _putchar(tens + '0');
 		}
-		_putchar('\n');
+		_putchar(units + '0');
+		if (col < 9)
+			_putchar(44);
+		col++;
 	}
+	col = 0;
+	row++;
+	_putchar(10);
+}
