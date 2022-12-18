@@ -6,21 +6,27 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t a;
-	listint_t *b = (listint_t *)head;
+	const listint_t *current, *runner;
+	size_t c_i, r_i;
 
-	a = 0;
-	while (b && b > b->next)
+	current = head;
+	c_i = 0;
+
+	while (current != NULL)
 	{
-		printf("[%p] %d\n", (void *)b, b->n);
-		b = b->next;
-		a++;
+		runner = head;
+		for (r_i = 0; r_i < c_i; r_i++)
+		{
+			if (runner == current)
+			{
+				printf("-> [%p] %d\n", (void *)current, current->n);
+				return (c_i);
+			}
+			runner = runner->next;
+		}
+		printf("[%p] %d\n", (void *)current, current->n);
+		current = current->next;
+		c_i++;
 	}
-	if (b)
-	{
-		printf("[%p] %d\n", (void *)b, b->n);
-		printf("-> [%p] %d\n", (void *)b->next, b->next->n);
-		a++;
-	}
-	return (a);
+	return (c_i);
 }
