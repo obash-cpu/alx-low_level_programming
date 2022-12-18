@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
+#include <strings.h>
 /**
  * print_all - Prints anything
  * @format: The conversion specifier to prints
