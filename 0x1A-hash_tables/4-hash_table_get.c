@@ -1,9 +1,7 @@
-/*
- * File: 4-hash_table_get.c
- * Auth: Gedeon Obae Gekonge
- */
-
 #include "hash_tables.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 /**
  * hash_table_get - Retrieve the value associated with
